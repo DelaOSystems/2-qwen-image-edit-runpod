@@ -1,0 +1,5 @@
+[project]
+name = "qwen-image-edit-runpod"
+
+[build]
+dockerfile = ".runpod/Dockerfile"
