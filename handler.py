@@ -9,7 +9,9 @@ from PIL import Image
 # Load model on startup
 pipe = DiffusionPipeline.from_pretrained(
     "Qwen/Qwen-Image-Edit-2509",
-    torch_dtype=torch.float16).to("cuda")
+    torch_dtype=torch.float16,
+    trust_remote_code=True
+).to("cuda")
 
 def handler(event):
     """
